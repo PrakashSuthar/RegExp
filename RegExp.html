@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var reg=/[^a-z\d ]/i;//i is for Caseinsensitive RegExp is enclosed in '/'
+      var Str="Prakash,is,a,student,emloyee,friend,son,boy,so,on ,and$26000000 owner's friend with\"Not a single loan!\"";
+      //We will implement various functions like replace(),search(),split(),match();
+      //match()->returns an array of strings
+      //replace replaces all the instanaces of the entered part
+      var Replaced_String=Str.replace(reg,"|");//This will relace only first occurence
+      document.write("Str=>"+Str);
+      document.write("Replaced_String=>"+Replaced_String);
+    </script>
+  </body>
+</html>
